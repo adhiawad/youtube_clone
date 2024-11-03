@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
-import { VIDEO_API , API_KEY} from '../constant/youtube';
+import API_KEY,{ VIDEO_API  } from '../constant/youtube';
 import VideoCard from './VideoCard';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
