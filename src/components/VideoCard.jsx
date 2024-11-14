@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Avatar from "react-avatar";
-import API_KEY from '../constant/youtube';
+const API_KEY = import.meta.env.VITE_API_KEY;
+const VIDEO_API = import.meta.env.VITE_VIDEO_API;
+
 
 
 const VideoCard = ({item}) => {

@@ -2,7 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Avatar from "react-avatar";
 import { useSearchParams } from "react-router-dom";
-import API_KEY from "../constant/Youtube";
+const API_KEY = import.meta.env.VITE_API_KEY;
+const VIDEO_API = import.meta.env.VITE_VIDEO_API;
+
+
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import { RiShareForwardLine } from "react-icons/ri";
 import { MdOutlineFileDownload } from "react-icons/md";
